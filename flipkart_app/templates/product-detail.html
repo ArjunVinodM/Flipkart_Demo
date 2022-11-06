@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}Product Detail{% endblock title %}
+{% block main-content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 text-center align-self-center">
+            <img src="{% static 'app/images/product/1.jpg' %}" alt="" class="img-fluid img-thumbnail"><br>
+            <h2> boAt BassHeads 900 </h2>
+            <hr>
+            <h4>Rs. 599 <small class="fw-light text-decoration-line-through">2499</small></h4><br>
+            <a href="{% url 'add-to-cart' %}" class="btn btn-primary shadow px-5 py-2">Add to Cart</a>
+            <a href="{% url 'buy-now' %}" class="btn btn-danger px-5 py-2 ms-20">Buy Now</a>
+        </div>
+        <div class="col-sm-5 offset-sm-1">
+            <h5 class="mt-5">Available Offers</h5>
+            <ul>
+                <li>Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit</li>
+                <li>Bank Offer Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above.</li>
+                <li>Bank Offer10% off on SBI Credit Card EMI Transactions, up to ₹2,250, on orders of ₹5000 and above.</li>
+                <li>No Cost EMI on Bajaj Finserv EMI Card on cart value above ₹2999.</li>
+                <li>Combo OfferBuy 3-4 items save 5%; Buy 5 or more save 10%See all products <h6>T&C</h6></li>
+            </ul>
+            <br>
+            <p><h5>boAt BassHeads 900 Description:</h5> The boAt BassHeads 900 wired headphones come with an amalgamation of style with performance. Now get ready to enjoy your favourite tunes with Super Extra Bass and crystal-clear sound performance with Bass Heads 900 wired headphones. Experience powerful, dynamic sound with punchy bass and clear, natural vocals with the responsive 40mm Neodymium drivers, the drivers effectively reproduce sound equally across the whole audio band. The ergonomic design creates passive attenuation of ambient noise while providing maximum comfort for hours of listening pleasure in a snuggly fit without fatigue. The sleek, lightweight, and compact design makes portability extremely convenient. The foldable and compact Feather Light Headphone weighs even less than 150 g, moreover, the ear cups can be folded for easy, convenient storage.</p><br>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock main-content %}
